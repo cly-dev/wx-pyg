@@ -1,0 +1,80 @@
+<!--pages/user/user.wxml-->
+<view class="pyg-mine">
+    <!--个人信息-->
+    <view class="mine-info">
+        <!--背景图-->
+        <view class="info-bg-img" style="background-image:url({{userInfo?userInfo.avatarUrl:''}})"></view>
+        <!--头像-->
+        <view class="info-avatar">
+            <image class="avatar" src="{{userInfo?userInfo.avatarUrl:'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2774380917,512880114&fm=26&gp=0.jpg'}}" />
+        </view>
+        <!--用户名-->
+        <view class="info-name" style="color:{{userInfo?'white':''}}">
+            <text wx:if="{{userInfo}}" class="name">{{userInfo.nickName}}</text>
+            <text wx:else bindtap = "getUserProfile">暂未登录/点击登录</text>
+        </view>
+        <!--导航菜单-->
+        <view class='info-nav' >
+            <navigator class="nav-itme" wx:for="{{nav}}" wx:key="name">
+                <view class="item-num"> {{item.num}}</view>
+                <view class="item-name">{{item.name}}</view>
+            </navigator>
+        </view>
+    </view>
+    <!--功能区-->
+    <view class="mine-main">
+        <!--导航菜单-->
+        <view class="main-nav">
+            <view class="nav-title">
+                我的订单
+            </view>
+            <view class="nav-content">
+                <navigator class="nav-item">
+                    <view class="iconfont icon-dingdan"></view>
+                    <view>全部订单</view> 
+                </navigator>
+                <navigator class="nav-item">
+                    <view class="iconfont icon-fukuantongzhi"></view>
+                    <view>待付款</view> 
+                </navigator>
+                <navigator class="nav-item">
+                    <view class="iconfont icon-tubiaozhizuomoban-89"></view>
+                    <view>待收货</view>                 
+                </navigator>
+                <navigator class="nav-item">
+                    <view class="iconfont icon-RectangleCopy"></view>
+                    <view>退款/退货</view> 
+                </navigator>
+            </view>
+        </view>
+        <!-- 收货地址管理-->
+        <view class="main-address" bindtap = "handleAdminAddress">
+            收货地址管理
+            <text></text>
+        </view>
+        <!--其他功能-->
+        <view class="main-other">
+            <navigator class="other-service">
+                联系客服
+                <text>400-618-4000</text>
+            </navigator>
+            <navigator class="other-feedback" url="/pages/feedback/feedback">
+                意见反馈
+                <text></text>
+            </navigator>
+            <navigator class="other-about">
+                关于我们
+                <text></text>
+            </navigator>
+            <view class="other-logout" bindtap = "handleLogout">
+                退出登录
+                <text></text>
+            </view>
+            <navigator class="other-logout">
+                把应用推荐给其他人
+                <text></text>
+            </navigator>
+        </view>
+    </view>
+    
+</view>

@@ -1,0 +1,59 @@
+/* pages/collect/collect.wxss */
+.pyg-collect .collect-category {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  padding: 10rpx 10rpx 10rpx 30rpx;
+  background-color: #f0f0f0;
+  align-items: center;
+}
+.pyg-collect .collect-category .category-item {
+  height: 40rpx;
+  border: 2rpx solid #d1cfcf;
+  margin-right: 20rpx;
+  height: 100%;
+  padding: 10rpx;
+  line-height: 50rpx;
+  background-color: white;
+}
+.pyg-collect .collect-category .activer {
+  border: 2rpx solid var(--themeColor);
+  color: var(--themeColor);
+}
+.pyg-collect .collect-container {
+  height: calc(100vh - 130rpx);
+  background-color: #f7f7f7;
+}
+.pyg-collect .collect-container .collect-item {
+  margin: 10rpx;
+  height: calc((100vh - 150rpx) / 5);
+  display: flex;
+  padding: 15rpx;
+  background-color: white;
+}
+.pyg-collect .collect-container .collect-item image {
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.pyg-collect .collect-container .collect-item .item-info {
+  flex: 4;
+  padding-left: 20rpx;
+  position: relative;
+}
+.pyg-collect .collect-container .collect-item .item-info .info-name {
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.pyg-collect .collect-container .collect-item .item-info .info-price {
+  position: absolute;
+  bottom: 10rpx;
+  left: 10rpx;
+  color: var(--themeColor);
+  font-size: 30rpx;
+}

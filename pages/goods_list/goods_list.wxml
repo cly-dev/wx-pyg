@@ -1,0 +1,15 @@
+<!--pages/goods_list/goods_list.wxml-->
+<view class="pyg-goodsList">
+    <Search />
+    <Tabs style="trans">
+        <scroll-view class="goodList-list" scroll-y bindscrolltolower='handleScrollLower' bindscroll='handleScrollStart'>
+            <navigator url="/pages/goods-detail/goods-detail?goods_id={{item.goods_id}}" class="list-item" wx:for="{{list}}" wx:key="goods_id">
+                <image mode="widthFix" src="{{item.goods_big_logo?item.goods_big_logo:'http://bpic.588ku.com/element_pic/01/47/02/12574338a640011.jpg'}}" />
+                <view class="item-info">
+                    <text class="info-name">{{item.goods_name}}</text>
+                    <text class="info-price">￥{{item.goods_price}} </text>
+                </view>
+            </navigator>
+        </scroll-view>
+    </Tabs>
+</view>

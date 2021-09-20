@@ -1,0 +1,155 @@
+/* pages/pay/pay.wxss */
+/* pages/cart/cart.wxss */
+.pyg-cart {
+  width: 100vw;
+  height: 100vh;
+}
+.pyg-cart .cart-address {
+  height: 140rpx;
+  border-bottom: 14rpx solid var(--themeColor);
+  padding: 18rpx;
+}
+.pyg-cart .cart-address .adress-Info {
+  position: relative;
+}
+.pyg-cart .cart-address .adress-Info .info-phone {
+  position: absolute;
+  right: 0;
+}
+.pyg-cart .cart-address .address-add {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pyg-cart .cart-address .address-add .cart-btn {
+  border: 1px solid #d6d6d6;
+  padding: 15rpx;
+  background-color: #f7f7f7;
+}
+.pyg-cart .cart-container {
+  height: calc(100vh - 240rpx);
+}
+.pyg-cart .cart-container .container-title {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 34rpx;
+  text-indent: 30rpx;
+  border-bottom: 4rpx solid #e6e6e6;
+}
+.pyg-cart .cart-container .container-list {
+  height: calc(100% - 100rpx);
+}
+.pyg-cart .cart-container .container-list .list-item {
+  height: 220rpx;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+}
+.pyg-cart .cart-container .container-list .list-item .item-radio {
+  flex: 1;
+}
+.pyg-cart .cart-container .container-list .list-item .item-radio checkbox {
+  transform: scale(0.7);
+}
+.pyg-cart .cart-container .container-list .list-item .item-info {
+  height: 100%;
+  flex: 10;
+}
+.pyg-cart .cart-container .container-list .list-item .item-info::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.pyg-cart .cart-container .container-list .list-item .item-info .info-image {
+  width: 32%;
+  height: 100%;
+  float: left;
+}
+.pyg-cart .cart-container .container-list .list-item .item-info .info-image image {
+  width: 100%;
+  height: 100%;
+}
+.pyg-cart .cart-container .container-list .list-item .item-info .info-detail {
+  width: 68%;
+  padding: 10rpx;
+  position: relative;
+  float: left;
+  height: 100%;
+}
+.pyg-cart .cart-container .container-list .list-item .item-info .info-detail .detail-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+.pyg-cart .cart-container .container-list .list-item .item-info .info-detail .detail-btn {
+  width: 90%;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  bottom: 10rpx;
+}
+.pyg-cart .cart-container .container-list .list-item .item-info .info-detail .detail-btn .detail-price {
+  color: var(--themeColor);
+  font-size: 35rpx;
+}
+.pyg-cart .cart-container .container-list .list-item .item-info .info-detail .detail-btn .detail-num text {
+  margin-left: 20rpx;
+}
+.pyg-cart .cart-container .container-list .list-item .item-info .info-detail .detail-btn .detail-num .num-red,
+.pyg-cart .cart-container .container-list .list-item .item-info .info-detail .detail-btn .detail-num .num-add {
+  border: 1px solid #acacac;
+  padding: 0 10rpx;
+}
+.pyg-cart .cart-tool {
+  height: 100rpx;
+  display: flex;
+  border-top: 2rpx solid #c0c0c0;
+}
+.pyg-cart .cart-tool view {
+  line-height: 100rpx;
+  height: 100%;
+  flex: 1;
+}
+.pyg-cart .cart-tool .tool-Allchecked {
+  padding: 10rpx;
+}
+.pyg-cart .cart-tool .tool-Allchecked checkbox {
+  transform: scale(0.7);
+  vertical-align: bottom;
+}
+.pyg-cart .cart-tool .tool-num {
+  padding-right: 20rpx;
+  padding-top: 20rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  text-align: right;
+}
+.pyg-cart .cart-tool .tool-num::after {
+  content: "包含运费";
+  display: block;
+  font-size: 20rpx;
+  padding-top: 5rpx;
+  color: #666;
+}
+.pyg-cart .cart-tool .tool-num text:last-child {
+  font-size: 30rpx;
+  color: var(--themeColor);
+}
+.pyg-cart .cart-tool .tool-count {
+  line-height: 100rpx;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--themeColor);
+  text-align: center;
+  color: white;
+  font-size: 30rpx;
+}

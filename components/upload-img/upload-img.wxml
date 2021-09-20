@@ -1,0 +1,5 @@
+<view class="uploadImg-container">
+    <image src="http://pic.51yuansu.com/pic3/cover/01/69/80/595f67c2aff1e_610.jpg" />
+    <icon  type="cancel" size="20"></icon>
+</view>
+

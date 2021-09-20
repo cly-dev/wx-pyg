@@ -1,0 +1,82 @@
+/* pages/feedback/feedback.wxss */
+.pyg-feedback {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(236, 236, 236);
+
+  .feedback-choose {
+    height: 250rpx;
+    padding: 10rpx 20rpx;
+    view {
+      background-color: white;
+      float: left;
+      width: 30%;
+      margin: 40rpx 0 0 22rpx;
+      height: 50rpx;
+      color: #666;
+      line-height: 50rpx;
+      text-align: center;
+    }
+    .activer {
+      color: var(--themeColor);
+      border: 2rpx solid var(--themeColor);
+    }
+    &::before {
+      content: "问题的种类";
+      color: #666;
+      font-size: 28rpx;
+      display: block;
+      clear: both;
+    }
+  }
+  .feedback-main {
+    margin: 10rpx 20rpx;
+    background-color: white;
+    position: relative;
+    textarea {
+      padding: 10rpx;
+      font-size: 28rpx;
+      width: 100%;
+      height: 200rpx;
+    }
+    .main-upload {
+      width: 100%;
+      padding: 30rpx;
+      .upload-btn {
+        font-size: 40rpx;
+        text-align: center;
+        color: rgb(192, 192, 192);
+        height: 80rpx;
+      }
+      .upload-watch {
+        float: right;
+        width: calc(100% - 100rpx);
+        flex-direction: column;
+        &::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+      }
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+  }
+  .feedback-refs {
+    position: relative;
+    margin: 20rpx 20rpx;
+    height: 80rpx;
+    button {
+      position: absolute;
+      right: 0;
+      height: 80rpx;
+      background-color: var(--themeColor);
+      color: white;
+      font-weight: 100;
+      line-height: 80rpx;
+    }
+  }
+}

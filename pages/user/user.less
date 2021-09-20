@@ -1,0 +1,150 @@
+/* pages/user/user.wxss */
+.pyg-mine {
+  background-color: rgb(233, 233, 233);
+  width: 100vw;
+  height: 100vh;
+  .mine-info {
+    border-bottom: 4rpx solid rgb(255, 255, 255);
+    height: 35vh;
+    position: relative;
+    //背景图
+    .info-bg-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      background-position: center;
+      filter: blur(40rpx);
+      background-color: white;
+    }
+    //用户头像
+    .info-avatar {
+      width: 150rpx;
+      height: 150rpx;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      .avatar {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    //用户名
+    .info-name {
+      position: absolute;
+      color: rgb(0, 0, 0);
+      bottom: 50rpx;
+      width: 100%;
+      height: 100rpx;
+      text-align: center;
+      line-height: 100rpx;
+    }
+    .info-nav {
+      position: absolute;
+      height: 100rpx;
+      width: 92%;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: -50rpx;
+      display: flex;
+      background-color: white;
+      border: 2rpx solid rgb(235, 235, 235);
+      navigator {
+        flex: 1;
+        .item-num {
+          color: var(--themeColor);
+          padding: 8rpx;
+        }
+        .item-name {
+          color: rgb(77, 76, 76);
+        }
+        view {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .mine-main {
+    margin-top: 55rpx;
+    height: calc(65vh - 65rpx);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    view[class^="main"] {
+      width: 92%;
+      background-color: white;
+      margin-top: 20rpx;
+      color: rgb(75, 74, 74);
+    }
+    .main-nav {
+      height: 180rpx;
+      .nav-title {
+        border-bottom: 2rpx solid rgb(218, 218, 218);
+        height: 80rpx;
+        line-height: 80rpx;
+        text-indent: 20rpx;
+      }
+      .nav-content {
+        display: flex;
+        height: calc(100% - 80rpx);
+        .nav-item {
+          height: 100%;
+          flex: 1;
+          text-align: center;
+          font-size: 26rpx;
+          .iconfont {
+            font-size: 38rpx;
+            color: var(--themeColor);
+            padding: 10rpx;
+          }
+        }
+      }
+    }
+    .main-address {
+      height: 64rpx;
+      line-height: 64rpx;
+      text-indent: 20rpx;
+      position: relative;
+      text {
+        position: absolute;
+        right: 20rpx;
+        display: inline-block;
+        border-right: 1px solid rgb(182, 182, 182);
+        border-top: 1px solid rgb(182, 182, 182);
+        top: 50%;
+        transform: translate(0, -50%) rotate(45deg);
+        width: 16rpx;
+        height: 16rpx;
+      }
+    }
+    .main-other {
+      height: 320rpx;
+      [class^="other"] {
+        position: relative;
+        height: calc(320rpx / 5);
+        line-height: calc(320rpx / 5);
+        border-bottom: 2px solid rgb(241, 241, 241);
+        text-indent: 20rpx;
+        text {
+          position: absolute;
+          right: 20rpx;
+        }
+        &:nth-child(n + 2) {
+          text {
+            display: inline-block;
+            border-right: 1px solid rgb(182, 182, 182);
+            border-top: 1px solid rgb(182, 182, 182);
+            top: 50%;
+            transform: translate(0, -50%) rotate(45deg);
+            width: 16rpx;
+            height: 16rpx;
+          }
+        }
+      }
+    }
+  }
+}

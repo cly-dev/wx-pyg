@@ -1,0 +1,20 @@
+/**app.wxss**/
+@import "./styles/iconfont.wxss";
+page {
+  height: 100%;
+  /* 定义主体颜色 */
+  --themeColor: rgb(212, 60, 51);
+  /* 统一字体大小 */
+  font-size: 28rpx;
+}
+page,
+view,
+text,
+swiper,
+swiper-item,
+image,
+navigator {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

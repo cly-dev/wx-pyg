@@ -1,0 +1,3 @@
+<view class="colTabs-container" bindtap = "handleClickTabs">
+  <view wx:for="{{tabs}}" class="tabs-item {{item.isActive?'active':''}}"  wx:key="name" data-index="{{index}}">{{item.name}}</view>
+</view>

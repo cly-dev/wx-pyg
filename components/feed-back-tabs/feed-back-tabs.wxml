@@ -1,0 +1,5 @@
+<view class="tabs-container" bindtap = "handleChange">
+  <view class="tabs-item {{item.isActiver?'activer':''}}" wx:for="{{nav}}" wx:key="name" data-index="{{index}}">
+    {{item.name}}
+  </view>
+</view>

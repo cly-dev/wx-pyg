@@ -1,0 +1,43 @@
+/* pages/search/search.wxss */
+.pyg-search {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(240, 240, 240);
+  .search-content {
+    margin: 0 20rpx;
+    padding: 50rpx 0;
+    height: 70rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      flex: 5;
+      background-color: white;
+      height: 50rpx;
+      padding-left: 10rpx;
+    }
+    .search-cancel {
+      height: 50rpx;
+      line-height: 50rpx;
+      flex: 1;
+      text-align: center;
+      margin: 10rpx;
+      border: 1px solid rgb(230, 230, 230);
+      background-color: white;
+    }
+  }
+  .search-main {
+    width: 100%;
+    height: calc(100vh - 100rpx);
+    .main-item {
+      width: 100%;
+      padding: 0 20rpx;
+      white-space: normal;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      height: 80rpx;
+      line-height: 80rpx;
+      border-bottom: 2rpx solid rgb(201, 200, 200);
+    }
+  }
+}

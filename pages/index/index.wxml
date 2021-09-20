@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="pyg-index" >
+   <!-- 搜索框 -->
+   <SearchInput />
+   <!-- 轮播图 -->
+   <view class="index-swiper">
+   <swiper  autoplay indicator-dots skip-hidden-item-layout circular>
+      <swiper-item wx:for="{{swiperList}}" wx:key="goods_id" >
+         <image mode="aspectFill" src="{{item.image_src}}" />
+      </swiper-item>
+   </swiper>
+   </view>                                                                                                                 
+   <!-- 导航 -->
+   <view class="index-nav">
+      <view class="nav-item" wx:for="{{navList}}" wx:key="name">
+         <image mode="aspectFit"  src="{{item.image_src}}" />
+      </view>
+   </view>
+   <!-- 楼层 -->
+   <view class="index-floor">
+      <view class="floor-title" wx:for="{{floorData}}" wx:key="name">
+         <!-- 标题 -->
+         <view class="title-item">
+            <image  class="title-image" mode="aspectFit" src="{{item.floor_title.image_src}}"/>
+         </view>
+         <view class="floor-list">
+               <navigator class="list-item" wx:for="{{item.product_list}}" wx:for-item="value" wx:for-index="num" wx:key="name">
+                  <image mode="{{num==0?'withFix':'scaleToFill'}}" src="{{value.image_src}}" />
+               </navigator>
+         </view>
+      </view>
+   </view>
+</view>

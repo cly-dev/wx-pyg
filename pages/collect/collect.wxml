@@ -1,0 +1,22 @@
+<!--pages/collect/collect.wxml-->
+<view class="pyg-collect">
+    <!-- tabs栏 -->
+    <ColTabs />
+    <!--分类 -->
+    <view class="collect-category" bindtap = "handleClickCate">
+        <view  wx:for="{{category}}" class="category-item {{value.isActive?'activer':''}}"  wx:key="name" data-index="{{index}}" wx:for-item="value" >
+            {{value.name}}
+        </view>
+    </view>
+    <!--收藏主体-->
+    <view class="collect-container">
+        <navigator class="collect-item" wx:for="{{colData}}" wx:key="goods_id" url="/pages/goods-detail/goods-detail?goods_id={{item.goods_id}}">
+            <image src="{{item.goods_big_logo}}" mode="aspectFill" />
+            <view class="item-info">
+                <text class="info-name">{{item.goods_name}}</text>
+                <text class="info-price">￥{{item.goods_price}}</text>
+            </view>
+        </navigator>
+    </view>
+</view>
+

@@ -1,0 +1,90 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/index/index",
+                    "pathName": "pages/",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/search/search",
+                    "pathName": "pages/search/search",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/goods_list/goods_list",
+                    "pathName": "pages/goods_list/goods_list",
+                    "query": "cid=5",
+                    "scene": null
+                },
+                {
+                    "name": "pages/goods_list/goods_list",
+                    "pathName": "pages/goods_list/goods_list",
+                    "query": "goods_id=43986",
+                    "scene": null
+                },
+                {
+                    "name": "pages/goods-detail/goods-detail",
+                    "pathName": "pages/goods-detail/goods-detail",
+                    "query": "goods_id=43986",
+                    "scene": null
+                },
+                {
+                    "name": "pages/goods-detail/goods-detail",
+                    "pathName": "pages/goods-detail/goods-detail",
+                    "query": "goods_id=\"43986\"",
+                    "scene": null
+                },
+                {
+                    "name": "pages/goods-detail/goods-detail",
+                    "pathName": "pages/goods-detail/goods-detail",
+                    "query": "goods_id=\"43986\"",
+                    "scene": null
+                },
+                {
+                    "name": "pages/goods-detail/goods-detail",
+                    "pathName": "pages/goods-detail/goods-detail",
+                    "query": "goods_id=43986",
+                    "scene": null
+                },
+                {
+                    "name": "pages/goods-detail/goods-detail",
+                    "pathName": "pages/goods-detail/goods-detail",
+                    "query": "goods_id=43986",
+                    "scene": null
+                },
+                {
+                    "name": "pages/goods-detail/goods-detail",
+                    "pathName": "pages/goods-detail/goods-detail",
+                    "query": "goods_id=43986",
+                    "scene": null
+                },
+                {
+                    "name": "pages/pay/pay",
+                    "pathName": "pages/pay/pay",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/cart/cart",
+                    "pathName": "pages/cart/cart",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="pyg-feedback">
+    <!--tabs栏-->
+    <Tabs></Tabs>
+    <!--选项框-->
+    <view class="feedback-choose" >
+        <view  wx:for="{{choose}}" wx:key="name" data-index="{{index}}" class="choose-item {{ item.isActiver?'activer':''}}" bindtap = "handleChoose">
+            {{item.name}}
+        </view>
+    </view>
+    <!--文本框和上传图片 -->
+    <view class="feedback-main">
+        <!--文本框-->
+        <textarea placeholder="请描述您的问题"></textarea>
+        <!--上传图片-->
+        <view class="main-upload" >
+                <button class="upload-btn" size="mini" bindtap = "handleUpload">+</button>
+                <view class="upload-watch">
+                    <UploadImg></UploadImg>
+                </view>
+        </view>
+    </view>
+    <!--提交-->
+    <view class="feedback-refs">
+        <button size="mini">提交</button>
+    </view>
+</view>

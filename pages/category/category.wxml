@@ -1,0 +1,29 @@
+<!--pages/category/category.wxml-->
+<view class="pyg-category">
+<!-- 搜索栏 -->
+    <Search></Search>
+    <!-- 分类主体 -->
+    <view class="category-container">
+        <!-- 侧边菜单 -->
+        <scroll-view class="category-slider" scroll-y enable-flex>
+            <view  wx:for="{{categoriesData}}" wx:key="cat_pid" class="slider-item {{index==indexs?'active':''}}" data-index="{{index}}" bindtap = "handleClikeMenu">
+                {{item.cat_name}}
+            </view>
+        </scroll-view>
+        <!-- 分类列表 -->
+        <scroll-view class="category-list" scroll-y scroll-top="{{indexs?0:''}}">
+            <view class="category-title" wx:for="{{list}}" wx:key="cat_pid">
+                <view class="title-item">
+                    {{item.cat_name}}
+                </view>
+                <!-- 详细分类 -->
+                <view class="category-image">
+                    <navigator class="image-item" wx:for="{{item.children}}" wx:for-item="value" wx:key="cat_id" url="/pages/goods_list/goods_list?cid={{value.cat_id}}">
+                        <image src="{{value.cat_icon}}" />
+                        <text >{{value.cat_name}}</text>
+                    </navigator>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

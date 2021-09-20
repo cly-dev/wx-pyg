@@ -1,0 +1,52 @@
+<view class="pyg-goodsDetail">
+        <!--轮播图 -->
+        <swiper autoplay indicator-dots>
+            <swiper-item wx:for="{{DetailData.pics}}" wx:key="pics_id"  >
+                <image src="{{item.pics_mid}}" mode="aspectFill" bindtap = "handleWatch" data-url="{{item.pics_mid}}" />
+            </swiper-item>
+        </swiper>
+        <!-- 详细介绍 -->
+        <view class="goodsDetail-introduce">
+            <view class="info-price">￥{{DetailData.goods_price}}</view>
+                <view class="introduce-info">
+                <view class="info-name">{{DetailData.goods_name}}</view>
+                <view class="instroduce-col" bindtap = "handleCol">
+                    <span class="iconfont {{isCol?'icon-shoucang':'icon-shoucang1'}} " />
+                    <text>{{isCol?'已收藏':'收藏'}}</text>   
+                </view>
+            </view>
+        </view>
+        
+        <!-- 图文详情 -->
+        <view class="goodsDetail-detail" >
+                <view class="detail-title">
+                    图文详情
+                </view>
+                <scroll-view class="detail-introduce" scroll-y>
+                    <rich-text nodes="{{DetailData.goods_introduce}}"></rich-text>
+                </scroll-view>
+        </view>
+        <!-- 底部工具栏 -->
+        <view class="goodsDetail-tool">
+            <view class="tool-Service" >
+                <span class="iconfont icon-kefu" />
+                <text >联系客服</text>
+                <button open-type="contact"/>
+            </view>
+            <view class="tool-share" >
+                <span class="iconfont icon-fenxiang" />
+                <text >分享</text>
+                <button open-type="share" />
+            </view>
+            <navigator class="tool-cart" url="/pages/cart/cart" open-type="reLaunch">
+                <span class="iconfont icon-gouwuche" />
+                <text>购物车</text>
+            </navigator>
+            <view bindtap = "handleAddCart" class="tool-add-cart" >
+                加入购物车
+            </view>
+            <navigator class="tool-pay" url="/pages/pay/pay">
+                立即购买
+            </navigator>
+        </view>
+</view>

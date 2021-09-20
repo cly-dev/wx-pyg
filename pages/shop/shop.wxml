@@ -1,0 +1,26 @@
+<view class="container">
+<!-- 列表渲染
+    1 wx:for="{{循环的对象或者数组}}" wx:for-item="遍历时值的名称" wx:for-index="循环项的索引"
+    2 wx:key="唯一的值",如果唯一的值为*this 表示数组为一个普通数组 *this表示循环项
+    3 如果没写for-item 默认循环项的名称为item
+
+ -->
+<!-- 条件渲染 
+    wx:if--类型于vue的v-if
+    hidden--类型于vue的v-show
+    wx:if:用于渲染一次
+    wx:show:用于经常渲染
+    hidden 尽量不要和display一起使用
+
+-->
+<block wx:if="{{list}}">
+    <text wx:for="{{list}}" wx:for-item="value" wx:key="{{value.id}}">{{value.name}}</text>
+</block>
+<block wx:elif="{{true}}">
+    <text wx:for="{{list}}" wx:for-item="value" wx:key="{{list.id}}"   >{{value.name}}</text>
+</block>
+<text  selectable>
+    我是你爹
+</text>
+</view>
+<button bindtap="handleClick">点我</button>

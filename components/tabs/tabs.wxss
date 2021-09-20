@@ -1,0 +1,19 @@
+.tabs-container {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabs-container .tabs-item {
+  color: #666;
+  height: 100%;
+  line-height: 100rpx;
+  border-bottom: 6rpx solid #f1efef;
+  flex: 1;
+  text-align: center;
+}
+.tabs-container .active {
+  color: #e9423a;
+  border-bottom: 6rpx solid #e9423a;
+}

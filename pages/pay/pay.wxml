@@ -1,0 +1,54 @@
+<!--pages/cart/cart.wxml-->
+<view class="pyg-cart">
+    <!--添加地址-->
+    <view class="cart-address">
+        <view class="cart-adress">
+            <view class="adress-Info" >
+                <text class="info-name">收货人:{{address.userName}}</text>
+                <text class="info-phone">{{address.telNumber}}</text>
+                <view class="info-address">
+                {{address.cityName}}{{address.countyName}}{{address.detailInfo}}
+                </view>
+            </view>            
+        </view>
+        
+    </view>
+    <!--购物车主体-->
+    <view class="cart-container">
+        <view class="container-title">购物车</view>
+        <scroll-view class="container-list" scroll-y>
+            <view class="list-item" wx:for="{{cart}}" wx:key="goods_id">
+                <view class="item-radio">
+                </view>
+                <view class="item-info">
+                    <view class="info-image">
+                        <image src="{{item.goods_small_logo}}" mode="aspectFit" />
+                    </view>
+                    <view class="info-detail">
+                        <text class="detail-name">{{item.goods_name}}</text>
+                        <view class="detail-btn">
+                            <text class="detail-price">￥ {{item.goods_price}}</text>
+                            <view class="detail-num">
+                                    <text>X {{item.goods_num}}</text>
+                            </view>
+                        </view>                        
+                    </view>    
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <!--底部工具栏-->
+    <view class="cart-tool">
+        <view class="tool-Allchecked">
+            <checkbox-group bindchange="handleAllChecked">
+            </checkbox-group>
+        </view>
+        <view class="tool-num">
+            <text>合计:</text>
+            <text>￥ {{count}}</text> 
+        </view>
+        <view class="tool-count" bindtap = "handlePay">
+                支付{{count.length?'('+count.length+')':''}}
+        </view>
+    </view>
+</view>

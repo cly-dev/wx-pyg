@@ -1,0 +1,40 @@
+/* pages/goods_list/goods_list.wxss */
+.pyg-goodsList {
+  height: 100vh;
+  width: 100vw;
+  .goodList-list {
+    height: calc(100vh - 100rpx);
+  }
+  .list-item {
+    height: calc((100vh - 100rpx) / 4);
+    border-bottom: 4rpx solid rgb(219, 217, 217);
+    display: flex;
+    padding: 10rpx;
+    image {
+      vertical-align: middle;
+      height: 100%;
+      flex: 1;
+      width: 100%;
+      padding-left: 30rpx;
+    }
+    .item-info {
+      flex: 2;
+      padding-left: 40rpx;
+      position: relative;
+      .info-name {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 28rpx;
+      }
+      .info-price {
+        color: var(--themeColor);
+        font-size: 35rpx;
+        position: absolute;
+        bottom: 20rpx;
+      }
+    }
+  }
+}

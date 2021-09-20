@@ -1,0 +1,6 @@
+<view class="tabs-container">
+  <view bindtap = "handClickTabs" class="tabs-item {{item.isActive?'active':''}}" wx:for="{{tabs}}" wx:key="name" data-index="{{index}}"  >
+    {{item.name}}
+  </view>
+</view>
+<slot></slot>

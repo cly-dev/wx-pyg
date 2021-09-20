@@ -1,0 +1,107 @@
+.pyg-goodsDetail swiper {
+  height: 450rpx;
+}
+.pyg-goodsDetail swiper image {
+  width: 100%;
+  height: 100%;
+}
+.pyg-goodsDetail .goodsDetail-introduce {
+  height: 150rpx;
+}
+.pyg-goodsDetail .goodsDetail-introduce .info-price {
+  padding-left: 20rpx;
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+.pyg-goodsDetail .goodsDetail-introduce .introduce-info {
+  padding: 10rpx;
+  display: flex;
+  border-bottom: 10rpx solid #eeecec;
+}
+.pyg-goodsDetail .goodsDetail-introduce .introduce-info .info-name {
+  flex: 5;
+  padding-right: 20rpx;
+  font-size: 27rpx;
+  color: #585858;
+  border-right: 1px solid #969595;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.pyg-goodsDetail .goodsDetail-introduce .instroduce-col {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+.pyg-goodsDetail .goodsDetail-introduce .instroduce-col .icon-shoucang1,
+.pyg-goodsDetail .goodsDetail-introduce .instroduce-col .icon-shoucang {
+  font-size: 40rpx;
+}
+.pyg-goodsDetail .goodsDetail-introduce .instroduce-col text {
+  display: inline-block;
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+.pyg-goodsDetail .goodsDetail-detail {
+  height: calc(100vh - 720rpx);
+}
+.pyg-goodsDetail .goodsDetail-detail .detail-title {
+  height: 80rpx;
+  line-height: 80rpx;
+  color: var(--themeColor);
+  font-size: 30rpx;
+  font-weight: bold;
+  text-indent: 30rpx;
+}
+.pyg-goodsDetail .goodsDetail-detail .detail-introduce {
+  height: 100%;
+}
+.pyg-goodsDetail .goodsDetail-tool {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  height: 80rpx;
+  background-color: white;
+  width: 100%;
+  border-top: 1rpx solid #c4c2c2;
+}
+.pyg-goodsDetail .goodsDetail-tool [class^="tool"] {
+  flex: 3;
+}
+.pyg-goodsDetail .goodsDetail-tool [class^="tool"]:nth-child(-n + 2) {
+  position: relative;
+}
+.pyg-goodsDetail .goodsDetail-tool [class^="tool"]:nth-child(-n + 2) button {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.pyg-goodsDetail .goodsDetail-tool [class^="tool"]:nth-child(-n + 3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-size: 26rpx;
+}
+.pyg-goodsDetail .goodsDetail-tool [class^="tool"]:nth-child(n + 4) {
+  flex: 4;
+  line-height: 80rpx;
+  color: white;
+  text-align: center;
+}
+.pyg-goodsDetail .goodsDetail-tool [class^="tool"]:nth-child(4) {
+  background-color: #fca91a;
+}
+.pyg-goodsDetail .goodsDetail-tool [class^="tool"]:last-child {
+  background-color: var(--themeColor);
+}

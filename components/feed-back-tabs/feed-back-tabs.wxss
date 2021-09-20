@@ -1,0 +1,17 @@
+.tabs-container {
+  height: 80rpx;
+  display: flex;
+  background-color: white;
+}
+.tabs-container .tabs-item {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: 4rpx solid #e2e2e2;
+  color: #666;
+}
+.tabs-container .activer {
+  color: var(--themeColor);
+  border-bottom: 4rpx solid var(--themeColor);
+}

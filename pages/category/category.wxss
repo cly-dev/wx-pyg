@@ -1,0 +1,57 @@
+/* pages/category/category.wxss */
+.pyg-category {
+  width: 100vw;
+  height: 100vh;
+}
+.pyg-category .category-container {
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.pyg-category .category-container .category-slider {
+  flex: 2;
+  border-right: 2px solid #ece9e9;
+}
+.pyg-category .category-container .category-slider .slider-item {
+  width: 100%;
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+  border-bottom: 2px solid #ece9e9;
+  color: #1a1a1a;
+}
+.pyg-category .category-container .category-list {
+  flex: 5;
+  height: 100%;
+  padding: 10rpx;
+}
+.pyg-category .category-container .category-list .category-title .title-item {
+  font-weight: bold;
+  font-size: 32rpx;
+  width: 100%;
+  text-align: center;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.pyg-category .category-container .category-list .category-title .category-image::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.pyg-category .category-container .category-list .category-title .category-image .image-item {
+  width: 33%;
+  float: left;
+  text-align: center;
+  padding: 20rpx;
+  height: 200rpx;
+}
+.pyg-category .category-container .category-list .category-title .category-image .image-item image {
+  width: 100%;
+  height: 100rpx;
+}
+.pyg-category .category-container .category-list .category-title .category-image .image-item texy {
+  white-space: nowrap;
+}
+.active {
+  border-left: 10rpx solid red;
+  color: red !important;
+}

@@ -1,0 +1,59 @@
+.pyg-index {
+  width: 100vw;
+  height: 100vh;
+  // 轮播图
+  .index-swiper {
+    width: 100%;
+    swiper-item {
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  //导航菜单
+  .index-nav {
+    padding: 20rpx;
+    width: 100vw;
+    height: 170rpx;
+    display: flex;
+    .nav-item {
+      flex: 1;
+      image {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  //楼层
+  .index-floor {
+    width: 100%;
+    // 标题
+    .floor-title {
+      background-color: white;
+    }
+    .title-item {
+      background-color: rgb(238, 238, 238);
+      .title-image {
+        width: 100%;
+        height: 70rpx;
+      }
+    }
+    //图片列表数据
+    .floor-list {
+      navigator {
+        float: left;
+        width: 33.33%;
+        height: 54vw;
+        padding: 5rpx;
+        &:nth-last-child(-n + 4) {
+          height: 27vw;
+        }
+        image {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

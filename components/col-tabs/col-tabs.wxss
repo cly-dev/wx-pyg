@@ -1,0 +1,16 @@
+.colTabs-container {
+  height: 80rpx;
+  display: flex;
+}
+.colTabs-container .tabs-item {
+  flex: 1;
+  text-align: center;
+  height: 100%;
+  line-height: 80rpx;
+  color: #666666;
+  border-bottom: 2px solid #c5c5c5;
+}
+.colTabs-container .active {
+  border-bottom: 2px solid var(--themeColor);
+  color: var(--themeColor);
+}
